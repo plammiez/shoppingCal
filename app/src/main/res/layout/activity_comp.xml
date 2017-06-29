@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_green"
+    tools:context="com.example.waraporn.shoppingcal.CompActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ed_price1"
+                android:layout_marginEnd="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="17dp"
+                android:layout_toLeftOf="@+id/ed_qty1"
+                android:layout_toStartOf="@+id/ed_qty1"
+                android:text="Price"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/ed_price1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_toEndOf="@+id/qty_1"
+                android:layout_toRightOf="@+id/qty_1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/qty_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/price1"
+                android:layout_marginBottom="21dp"
+                android:text="Qty"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/ed_qty1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/qty_1"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_weight="0.20"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="83dp"
+            android:layout_marginStart="83dp"
+            android:text="Avg."
+            android:textSize="12pt"
+            android:layout_below="@+id/linear1" />
+
+        <TextView
+            android:id="@+id/cal_avg"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/tv_avg"
+            android:layout_toRightOf="@+id/tv_avg"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/saving"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15pt"
+            android:layout_marginBottom="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/cal_avg"
+            android:layout_alignEnd="@+id/cal_avg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ed_price2"
+                android:layout_marginEnd="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="17dp"
+                android:layout_toLeftOf="@+id/ed_qty2"
+                android:layout_toStartOf="@+id/ed_qty2"
+                android:text="Price"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/ed_price2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_toEndOf="@+id/qty_2"
+                android:layout_toRightOf="@+id/qty_2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/qty_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/price1"
+                android:layout_marginBottom="21dp"
+                android:text="Qty"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/ed_qty2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/qty_2"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_weight="0.20"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_avg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="83dp"
+            android:layout_marginStart="83dp"
+            android:text="Avg."
+            android:textSize="12pt"
+            android:layout_below="@+id/linear2" />
+
+        <TextView
+            android:id="@+id/cal_avg2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/tv_avg2"
+            android:layout_toRightOf="@+id/tv_avg2"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/saving2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15pt"
+            android:layout_marginBottom="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/cal_avg2"
+            android:layout_alignEnd="@+id/cal_avg2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:background="@drawable/comp_piggy"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="COMPARE"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="53dp"
+            android:layout_marginStart="53dp" />
+    </RelativeLayout>
+</LinearLayout>

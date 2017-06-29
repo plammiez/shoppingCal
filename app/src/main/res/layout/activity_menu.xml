@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_green"
+    tools:context="com.example.waraporn.shoppingcal.MenuActivity">
+
+    <Button
+        android:id="@+id/bt_cal"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="40%"
+        android:background="@drawable/bt_cal"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="127dp" />
+
+    <Button
+        android:id="@+id/bt_list"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="40%"
+        android:background="@drawable/bt_makelist"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/bt_cal"
+        android:layout_alignStart="@+id/bt_cal"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        android:id="@+id/bt_shop"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="40%"
+        android:background="@drawable/bt_shoplocate"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/bt_cal"
+        android:layout_toRightOf="@+id/bt_cal"
+        android:layout_toEndOf="@+id/bt_cal" />
+
+    <Button
+        android:id="@+id/bt_comp"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="40%"
+        android:background="@drawable/bt_compare"
+        android:layout_above="@+id/bt_shop"
+        android:layout_toRightOf="@+id/bt_list"
+        android:layout_toEndOf="@+id/bt_list" />
+
+</android.support.percent.PercentRelativeLayout>
